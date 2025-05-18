@@ -26,8 +26,15 @@ A FastAPI-based notification service that supports Email, SMS, and In-App notifi
 
 ## 🛠️ Setup Instructions
 
-### 1. Clone the repository
+###
 
 ```bash
 git clone https://github.com/Anushaamar111/Pepsales-AI.git
 cd notification-service
+python -m venv venv
+On Windows: venv\Scripts\activate
+RabbitMQ- docker run -d --hostname my-rabbit --name rabbitmq -p 5672:5672 rabbitmq
+uvicorn main:app --reload
+python app/worker.py
+
+
