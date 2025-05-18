@@ -1,7 +1,7 @@
 # queue.py
 import aio_pika
 import json
-
+import os
 RABBITMQ_URL = os.getenv("RABBITMQ_URL")
 
 async def send_to_queue(notification_data):
