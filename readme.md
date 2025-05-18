@@ -11,7 +11,7 @@ A FastAPI-based notification service that supports Email, SMS, and In-App notifi
 - RabbitMQ-based queuing for async processing
 - Retry mechanism for failed notifications
 - MongoDB for persistence
-- Status tracking: `queued`, `sent`, `failed`
+
 
 ---
 
