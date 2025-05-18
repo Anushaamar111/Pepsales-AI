@@ -2,7 +2,7 @@
 import aio_pika
 import json
 
-RABBITMQ_URL = "amqp://guest:guest@localhost/"
+RABBITMQ_URL = os.getenv("RABBITMQ_URL")
 
 async def send_to_queue(notification_data):
     connection = await aio_pika.connect_robust(RABBITMQ_URL)
